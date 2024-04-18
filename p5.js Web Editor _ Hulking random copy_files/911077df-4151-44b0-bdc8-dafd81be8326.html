@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>
+    window.offs = [];
+    window.objectUrls = {"blob:https://preview.p5js.org/cf3234cf-9140-4a47-826b-95b7f8b5f66a":"/sketch.js"};
+    window.objectPaths = {"cf3234cf-9140-4a47-826b-95b7f8b5f66a":"sketch.js"};
+    window.editorOrigin = 'https://editor.p5js.org';
+  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js" crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js" crossorigin=""></script>
+    
+    
+    <title>Mario Jump</title>
+  <!--<base href="https://preview.p5js.org/JMinformaticajorge/sketches/tEUHxQTbO/">--><base href="."><style>
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.game-board{
+  width: 80%;
+  height: 500px;
+  border: 1px solid #333;
+  margin: 0 auto;
+  position:relative;
+  overflow:hidden;
+  border-bottom: 15px solid rgb(35, 160, 35);
+  background: linear-gradient(#87ceeb, #e0f6ff);
+}
+.clouds{
+  width:450px;
+  position: absolute;
+  animation: clouds-animation 10s infinite linear;
+}
+.pipe{
+  position: absolute;
+  bottom: 0;
+  width:60px;
+  right: 100%;
+  animation:pipe-animation 1.5s infinite linear;
+}
+.mario{
+  width: 150px;
+  position: absolute;
+  bottom:0;
+ /* animation: jump 500ms infinite;*/
+}
+.jump{
+  animation: jump 700ms infinite;
+}
+@keyframes pipe-animation{
+  from{
+    right:-80px;
+  }
+  to{
+    rigth: 100%;
+  }
+}
+@keyframes jump{
+  0%{
+    bottom:0;
+  }
+  40%{
+    bottom:180px;
+  }
+  
+  50%{
+    bottom:180px;
+  }
+   60%{
+    bottom:180px;
+  }
+  100%{
+    bottom:0;
+  }
+}
+
+@keyframes clouds-animation{
+  from{
+    right:0;
+  }
+  to{
+    right:100%;
+  }
+}</style><script src="https://preview.p5js.org/previewScripts.21537acb172bb479879b.js" crossorigin=""></script></head>
+  <body>
+    <div class="game-board">
+      <img src="https://assets.editor.p5js.org/65649e0e6080d9001a61e6d3/a63c5bd7-007f-4b30-b48f-2f33712b6f0b.png" class="clouds">
+      <img src="https://assets.editor.p5js.org/65649e0e6080d9001a61e6d3/f2555395-54bd-41c6-9b1a-f61867f18287.png" class="mario" style="animation: auto ease 0s 1 normal none running none; bottom: 14px; width: 75px; margin-left: 50px;">
+      <img src="https://assets.editor.p5js.org/65649e0e6080d9001a61e6d3/d2b1127b-909e-4304-b0e4-cacdabae3d65.png" class="pipe" style="animation: auto ease 0s 1 normal none running none; left: 14px;">
+    </div>
+    <main>
+    </main>
+    <script src="blob:https://preview.p5js.org/cf3234cf-9140-4a47-826b-95b7f8b5f66a"></script>
+  
+</body></html>
